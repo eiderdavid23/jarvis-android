@@ -116,5 +116,7 @@ fun Voice(apiKey: String) {
         if (heard.isNotBlank()) Text("Tú: $heard", color = Color.White, fontSize = 15.sp, textAlign = TextAlign.Center)
         Spacer(Modifier.height(8.dp))
         if (answer.isNotBlank()) Text("Jarvis: $answer", color = Color.White, fontSize = 16.sp, textAlign = TextAlign.Center)
+        Spacer(Modifier.height(24.dp))
+        WakeToggle()
     }
 }
