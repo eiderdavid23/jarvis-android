@@ -53,6 +53,7 @@ fun App(prefs: android.content.SharedPreferences) {
         when (screen) {
             "home" -> Home { screen = it }
             "Chat" -> Chat(apiKey)
+            "Voz" -> Voice(apiKey)
             "Ajustes" -> Settings(apiKey) { apiKey = it; prefs.edit().putString("groq_key", it).apply() }
             else -> Center("$screen: próximamente")
         }
